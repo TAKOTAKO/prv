@@ -6,7 +6,7 @@
     $password = $url["pass"];
     $db = substr($url["path"],1);
     echo '1';
-    mysql_connect('localhost', 'root','');
+    mysql_connect('localhost', 'people','people22');
     echo '2';
     mysql_select_db('people');
     $rs=mysql_query("select * from people" );
