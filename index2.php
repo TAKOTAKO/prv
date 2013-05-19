@@ -5,8 +5,8 @@
     $username = $url["user"];
     $password = $url["pass"];
     $db = substr($url["path"],1);
-    mysql_connect($server, $username, $password);
-    mysql_select_db($db);
+    mysql_connect('localhost', 'root','');
+    mysql_select_db('people');
     $rs=mysql_query("select * from people" );
     while($dat=mysql_fetch_assoc($rs)){echo "[id]:".$dat["id"]." [name]:".$dat["name"]."<br />";};
 
